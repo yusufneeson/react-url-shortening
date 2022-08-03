@@ -4,13 +4,6 @@
 	margin-bottom: 7.8rem;
 }
 
-.navbar {
-	margin-top: 4.8rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
 @media screen and (max-width: 1222px) {
 	.header {
 		max-width: 90rem;
@@ -21,5 +14,139 @@
 	.header {
 		max-width: 100%;
 		padding: 0 4rem;
+	}
+}
+
+.navbar {
+	margin-top: 4.8rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu {
+	margin: 0;
+	padding: 0;
+}
+
+.menu li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 1.5rem;
+}
+
+.menu li a {
+	color: var(--grayishViolet);
+	transition: all 0.3s;
+}
+
+.menu li a:hover,
+.auth a:hover {
+	color: var(--darkViolet);
+}
+
+.auth a {
+	margin: 0 1.5rem;
+	color: var(--grayishViolet);
+	transition: all 0.3s;
+}
+
+.auth > .button {
+	color: #fff;
+	background-color: var(--cyan);
+	padding: 1.2rem 2.6rem;
+	border-radius: 50px;
+	transition: all 0.3s;
+}
+
+.auth > .button:hover {
+	color: #fff;
+	background-color: #9ae3e2;
+}
+
+.burger {
+	display: none;
+	width: 2.6rem;
+	height: 2.3rem;
+	cursor: pointer;
+}
+
+.line {
+	width: 2.6rem;
+	height: 0.3rem;
+	background-color: var(--grayishViolet);
+	margin: 0.4rem 0;
+}
+
+.mobile {
+	display: none;
+}
+
+@media screen and (max-width: 1024px) {
+	.burger {
+		display: block;
+	}
+	.menu,
+	.auth {
+		display: none;
+	}
+
+	/* if mobile and open */
+	.mobile {
+		display: unset;
+	}
+	.mobile .menu,
+	.mobile .auth {
+		display: unset;
+	}
+
+	.mobile {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		margin-top: 10rem;
+	}
+
+	.container {
+		margin: 0 2.4rem;
+		background-color: var(--violet);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		font-weight: var(--fontBold);
+		border-radius: 2rem;
+	}
+
+	.mobile .menu li a,
+	.mobile .auth a {
+		color: #fff;
+	}
+
+	.mobile .menu li,
+	.mobile .auth {
+		padding: 2.2rem 0;
+	}
+
+	.mobile .auth a:first-child {
+		padding-bottom: 2.2rem;
+	}
+
+	.mobile .auth .button {
+		width: 20rem;
+		max-width: 20rem;
+		margin: auto;
+	}
+
+	.mobile .menu li:last-child {
+		border-bottom: 2px solid var(--grayishViolet);
+	}
+
+	.mobile .menu li,
+	.mobile .auth {
+		display: flex;
+		flex-direction: column;
 	}
 }
