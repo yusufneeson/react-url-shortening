@@ -1,0 +1,46 @@
+.navbar {
+	margin-top: 4.8rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu {
+	margin: 0;
+	padding: 0;
+}
+
+.menu li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 1.5rem;
+}
+
+.menu li a {
+	color: var(--grayishViolet);
+	transition: all 0.3s;
+}
+
+.menu li a:hover,
+.auth a:hover {
+	color: var(--darkViolet);
+}
+
+.auth a {
+	margin: 0 1.5rem;
+	color: var(--grayishViolet);
+	transition: all 0.3s;
+}
+
+.auth > .button {
+	color: #fff;
+	background-color: var(--cyan);
+	padding: 1.2rem 2.6rem;
+	border-radius: 50px;
+	transition: all 0.3s;
+}
+
+.auth > .button:hover {
+	color: #fff;
+	background-color: #9ae3e2;
+}
