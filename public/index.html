@@ -11,12 +11,52 @@
 			content="URL Shortening API challenge from frontendmentor done by Yusuf Neeson. This project using react.js with create-react-app as template"
 		/>
 		<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-		<!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 		<title>React URL Shortening - Yusuf Neeson</title>
+		<style>
+			:root {
+				--cyan: hsl(180, 66%, 49%);
+				--violet: rgb(59, 48, 84);
+				--secondaryRed: hsl(0, 87%, 67%);
+				--gray: hsl(0, 0%, 75%);
+				--grayishViolet: hsl(257, 7%, 63%);
+				--veryDarkBlue: hsl(255, 11%, 22%);
+				--veryDarkViolet: hsl(260, 8%, 14%);
+
+				--fontRegular: 500;
+				--fontBold: 700;
+
+				--shorten-desktop: url("/images/bg-shorten-desktop.svg");
+				--shorten-mobile: url("/images/bg-shorten-mobile.svg");
+				--boost-desktop: url("/images/bg-boost-desktop.svg");
+				--boost-mobile: url("/images/bg-boost-mobile.svg");
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+			html {
+				margin: 0;
+				padding: 0;
+				font-size: 62.5%;
+			}
+			body {
+				margin: 0;
+				padding: 0;
+				font-size: 1.8rem;
+				font-family: "Poppins", sans-serif;
+				font-weight: var(--fontRegular);
+			}
+			a {
+				text-decoration: none;
+			}
+		</style>
 	</head>
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
