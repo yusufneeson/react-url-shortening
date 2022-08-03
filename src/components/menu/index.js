@@ -1,6 +1,4 @@
-import style from "./menu.module.css";
-
-function Menu() {
+function Menu({ style }) {
 	return (
 		<>
 			<ul className={style.menu}>
