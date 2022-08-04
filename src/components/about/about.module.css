@@ -1,0 +1,12 @@
+.about {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	cursor: pointer;
+	z-index: 99;
+}
+
+.github {
+	width: 3rem;
+	height: 3rem;
+}
