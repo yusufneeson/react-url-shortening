@@ -1,3 +1,4 @@
+import About from "./components/about";
 import Cta from "./components/cta";
 import Footer from "./components/footer";
 import Header from "./components/header";
@@ -13,6 +14,7 @@ function App() {
 				<Main />
 				<Cta />
 				<Footer />
+				<About />
 			</main>
 		</div>
 	);
