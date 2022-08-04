@@ -1,0 +1,45 @@
+.feature {
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+.feature h2 {
+	text-align: center;
+	margin: 0;
+	font-weight: 700;
+	font-size: 3.2rem;
+	color: var(--veryDarkBlue);
+}
+
+.featureDesc {
+	text-align: center;
+	color: var(--grayishViolet);
+	padding: 0;
+	margin: 1rem auto;
+	max-width: 60%;
+}
+
+.group {
+	margin-top: 19.7rem;
+	display: flex;
+	gap: 3rem;
+}
+
+.line {
+	width: 100%;
+	height: 10px;
+	background-color: var(--cyan);
+	position: absolute;
+}
+
+@media screen and (min-width: 1440px) {
+	.feature {
+		max-width: 111rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.group {
+		flex-direction: column;
+	}
+}
